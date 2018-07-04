@@ -368,6 +368,24 @@
 						}
 					],
 					"updated": "23-6-2018"
+				},
+				{
+					"prettyName": "resume_playback",
+					"icon": "fa-lightbulb-o",
+					"name": "resume_playback",
+					"version": "1.0.0",
+					"url": "http://volumio.github.io/volumio-plugins/plugins/volumio/armhf/miscellanea/resume_playback/resume_playback.zip",
+					"license": "ISC",
+					"description": "Resume playback from where it was before shutdown.",
+					"details": "resume playback",
+					"author": "Nathan Squire",
+					"screenshots": [
+						{
+							"image": "",
+							"thumb": ""
+						}
+					],
+					"updated": "4-7-2018"
 				}
 			]
 		},

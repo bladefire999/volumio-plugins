@@ -1,0 +1,21 @@
+{
+	"name": "resume_playback",
+	"version": "1.0.0",
+	"description": "Resume playback from where it was before shutdown.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Nathan Squire",
+	"license": "ISC",
+	"volumio_info": {
+		"prettyName": "resume_playback",
+		"icon": "fa-lightbulb-o",
+		"plugin_type": "miscellanea"
+	},
+	"dependencies": {
+		"fs-extra": "^0.28.0",
+		"kew": "^0.7.0",
+		"v-conf": "^1.4.0"
+	}
+}
