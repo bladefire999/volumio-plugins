@@ -31,6 +31,7 @@ autostart.prototype.onVolumioStart = function () {
             try {
                 if (playFromLastPosition === true && lastPosition > -1) {
                     self.commandRouter.volumioPlay(lastPosition);
+		    self.commandRouter.volumioSeek(90);
                 } else {
                     self.commandRouter.volumioPlay();
                 }
