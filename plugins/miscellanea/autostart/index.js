@@ -2,6 +2,8 @@
 
 var libQ = require('kew');
 var config = new (require('v-conf'))();
+var io = require('socket.io-client');
+var socket = io.connect('http://localhost:3000');
 
 module.exports = autostart;
 
@@ -31,7 +33,7 @@ autostart.prototype.onVolumioStart = function () {
             try {
                 if (playFromLastPosition === true && lastPosition > -1) {
                     self.commandRouter.volumioPlay(lastPosition);
-		    self.commandRouter.volumioSeek(90);
+		    socket.emit('seek', 90);
                 } else {
                     self.commandRouter.volumioPlay();
                 }
